@@ -53,8 +53,7 @@ public class Veicolo {
     
     // metodi
     // stampare info
-    @Override
     public String stampInfo() {
-        return "Veicolo [brand=" + brand + ", year=" + year + "]";
+        return "Auto [ brand= " + brand + ", year= " + year + " ]";
     }
 }

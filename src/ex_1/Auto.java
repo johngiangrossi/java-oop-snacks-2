@@ -29,9 +29,10 @@ public class Auto extends Veicolo {
     }
 
     // metodi
+    // stampare info
     @Override
     public String stampInfo() {
-        return "Auto [ brand= " + getBrand() + ", year= " + getYear() + " +  numDoor= " + numDoor + " ]";
+        return "Auto [ brand= " + getBrand() + ", year= " + getYear() + ", numDoor= " + numDoor + " ]";
     }
 
     
