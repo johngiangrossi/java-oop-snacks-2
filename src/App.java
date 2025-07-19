@@ -1,17 +1,18 @@
 
-import ex_5.MissioneCommerciale;
-import ex_5.MissioneScientifica;
-import ex_5.MissioneSpaziale;
+import ex_4.Cerchio;
+import ex_4.Rettangolo;
 
 
 public class App {
     public static void main(String[] args) throws Exception {
         
+        // ex_1
         /*
         Auto auto1 = new Auto("casa", 1939, 4);
         System.out.println(auto1.stampInfo());
         */
         
+        // ex_2
         /*
         ContoRisparmio conto1 = new ContoRisparmio(10, "null", 2);
         System.out.println(conto1.toString());
@@ -25,6 +26,7 @@ public class App {
         che potrebbero rompere la logica interna della classe
         */
 
+        // ex_3
         /* 
         Utente utente1 = new Utente();
         
@@ -40,7 +42,8 @@ public class App {
         System.out.println(utente3.toString());
         */
         
-        /*
+        // ex_4
+        
         Rettangolo rettangolo1 = new Rettangolo(10, 10);
         System.out.println(rettangolo1.toString());
         rettangolo1.stampArea();
@@ -48,8 +51,12 @@ public class App {
         Cerchio cerchio1 = new Cerchio(10);
         System.out.println(cerchio1.toString());
         cerchio1.stampArea();
-        */
         
+        // illegal combination of modifiers: abstract and final(errors(1): 3:1-3:37)
+        // The class Figura can be either abstract or final, not both
+        
+        // ex_5
+        /*
         MissioneSpaziale[] missionArray = new MissioneSpaziale[5];
         missionArray[0] = new MissioneScientifica("nasa");
         missionArray[1] = new MissioneScientifica("paso");
@@ -68,6 +75,7 @@ public class App {
                 System.out.println("la missione non è presente");
             }
         }
+        */
 
         /*
         // senza if
@@ -103,6 +111,7 @@ public class App {
         }
         */
 
-        System.out.println(MissioneSpaziale.getNumMission());
+        // System.out.println(MissioneSpaziale.getNumMission());
+        
     }
 }
